@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <script>
+            
+        function sub() {
+            var n = document.getElementById("name").value;
+            var un = document.getElementById("username").value;
+            var m = document.getElementById("mail").value;
+            var p = document.getElementById("pass").value;
+            var cp = document.getElementById("cpass").value;
+            var ph = document.getElementById("num").value;
+            var g=document.querySelector('input[name="gender"]:checked').value;
+
+          document.write(`
+                <h1>Collected Information</h1>
+                <p><strong>Full Name:</strong> ${n}</p>
+                <p><strong>Username:</strong> ${un}</p>
+                <p><strong>Email:</strong> ${m}</p>
+                <p><strong>Password:</strong> ${p}</p>
+                <p><strong>Confirm Password:</strong> ${cp}</p>
+                <p><strong>Mobile Number:</strong> ${ph}</p>
+                 <p><strong>gender:</strong> ${g}</p>
+            
+            
+            
+       `) 
+    }
+    </script>
+
+
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+        <style>
+            body {
+                background-image: linear-gradient(rgb(175, 21, 230), rgb(0, 234, 255));
+  
+
+}
+                .table {
+         display: table;
+         
+         background-color: rgb(5, 249, 253);
+
+         background-size: 100px 50px;
+       
+        margin-left: auto;
+        margin-right: auto;
+        padding: 80px;
+        border: 2px solid rgb(15, 1, 1);
+        
+        
+      }
+
+      .table-row {
+         display: table-row; 
+          
+         
+         width: 200px;
+
+         
+      }
+
+      .table-col {
+         float: left;
+         display: table-column;
+         width:  280px;
+      }
+     
+      input[type=button]
+      {
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        height:30px;
+        width: 100px;
+      text-align:center;
+
+      margin: 0;
+  position: absolute;
+  top: 65%;
+  left: 47%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+         
+  background:linear-gradient(rgb(175, 21, 230), rgb(0, 234, 255));
+      }
+
+            
+        </style>
+    </head>
+    <body>
+        
+            <div class="reg">
+                <center> <h1 ="color: hsl(317, 88%, 3%)"><u>Registration</u></h1></center>
+                <div class="table">
+                    <div class="table-row">
+                        <div class="table-col">
+                            <b>Full Name:</b><br>
+                            <input type="text" name="fullname" id="name" placeholder="Enter your name">
+                            <br><br>
+                            <b>Username:</b><br>
+                            <input type="text" name="username" id="username" placeholder="Enter your username">
+                            <br><br>
+                            <b>Email:</b><br>
+                            <input type="text" name="mail" id="mail" placeholder="Enter your Email">
+                            <br><br>
+                            <b>Gender:</b><br>
+                            <input type="radio" name="gender" value="female">Female
+                            <input type="radio" name="gender" value="male">Male
+                            <input type="radio" name="gender" value="prefer not to say">Prefer not to say
+                            <br><br>
+                            <input type="button" name="sub" value="Submit" onclick="sub()">
+                        </div>
+                        <div class="table-col">
+                            <b>Password:</b><br>
+                            <input type="password" name="pass" id="pass" placeholder="Enter your password">
+                            <br><br>
+                            <b>Confirm Password:</b><br>
+                            <input type="password" name="password" id="cpass" placeholder="Confirm your password">
+                            <br><br>
+                            <b>Mobile number:</b><br>
+                            <input type="tel" name="number" id="num" placeholder="Enter your mobile number">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+ 
+</div>
+</html>
